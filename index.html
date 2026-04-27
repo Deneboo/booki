@@ -30,44 +30,45 @@
             </nav>
         </header>
         <main>
-            <section class="title">   
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
-            </section>
-            <section class="search-and-filter">
-                <search>
+            <section class="title-search-filter">  
+                <section class="title"> 
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </section>
+                <section class="search">
                     <form action="">
-                        <label for="city"><i class="fa fa-map-marker" aria-hidden="true"></i><label>
+                        <label for="city" class="marker"><i class="fa fa-map-marker" aria-hidden="true"></i></label>
                         <input type="search" id="city" name="q" />
                         <button type="submit">Rechercher</button>
                     </form>
+                </section>
+                <section class="filter">
                     <form action="">
                         <h3>Filtres</h3>
-                        <ul>
-                        <li>
-                            <button>
-                                Economique
-                            </button>
-                        </li>
-                        <li>
-                            <button>
-                                Familial
-                            </button>
-                        </li>
-                        <li>
-                            <button>
-                                Romantique
-                            </button>
-                        </li>
-                        <li>
-                            <button>
-                                Nos pépites
-                            </button>
-                        </li>
-                        </ul>
+                        <button class="filter-button">
+                            <img src="./images/vectors/money.png" alt="">
+                            Economique
+                        </button>
+                        <button class="filter-button">
+                            <img src="./images/vectors/human.png" alt="">
+                            Familial
+                        </button>
+                        <button class="filter-button">
+                            <img src="./images/vectors/heart.png" alt="">
+                            Romantique
+                        </button>
+                        <button class="filter-button">
+                            <img src="./images/vectors/flame.png" alt="">
+                            Nos pépites
+                        </button>
                     </form>
-                    <p><span><img src="./images/vectors/info.png" alt=""></span>Plus de 500 logements sont disponibles dans cette ville</p>
-                </search>
+                </section>
+                <section class="info">
+                    <img src="./images/vectors/info.png" alt="">
+                    <p>
+                        Plus de 500 logements sont disponibles dans cette ville
+                    </p>
+                </section>
             </section>
             <section class="hebergements-and-populaires">
                 <section class="hebergements">
