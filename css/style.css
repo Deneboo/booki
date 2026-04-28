@@ -188,8 +188,11 @@ main {
     flex-direction: row;
     gap: 15px;
 }
-
-.filter-button {
+.filter form p {
+    font-size: 18px;
+    font-weight: 700;
+}
+.filter form button {
     /* width: 170px; */
     display: flex;
     align-items: center;
