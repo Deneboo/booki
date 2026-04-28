@@ -17,6 +17,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0; 
 }
 
 .main-container {
@@ -70,7 +71,7 @@ nav ul {
 }
 
 nav a:hover {
-    padding-top: 19px;
+    padding-top: 15px;
     border-top: 3px solid var(--main-color);
 }
 
@@ -257,7 +258,7 @@ filter-button:active {
 
 .accommodations ul {
     list-style: none;
-    margin: 0 0 0 0;
+    margin: 0;
     padding-left: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -390,6 +391,30 @@ filter-button:active {
     padding: 0 19px 20px 19px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+/****** footer ***********/
+
+footer {
+    width: 1340px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    padding: 0 20px;
+    background-color: var(--main-bg-color);
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+footer div p {
+    font-size: 19px;
+    font-weight: 700;
 }
 
 
