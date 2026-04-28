@@ -29,7 +29,7 @@ body {
     box-sizing: border-box;
 }
 
-h1 {
+h1, h2 {
     font-weight: 700;
     font-size: 22px;
 }
@@ -116,15 +116,15 @@ main {
     color: var(--main-bg-color);
 }
 
-/****** title, search and filters ***********/
+/****** main title, search and filters, info ***********/
 
-.title-search-filter {
+.main-title-search-filter {
     display: flex;
     flex-direction: column;
     gap: 35px;
 }
 
-.tiltle p {
+.main-title p {
     height: 18px;
     margin: 0;
 }
@@ -211,6 +211,8 @@ filter-button:active {
     width: 22px;
     height: 22px;
 }   
+
+/****** info ***********/
 
 .info {
     display: flex;
