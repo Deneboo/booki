@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -30,21 +30,21 @@
             </nav>
         </header>
         <main>
-            <section class="main-title-search-filter">  
+            <div class="main-title-search-filter">  
                 <section class="main-title"> 
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </section>
-                <section class="search">
-                    <form action="">
+                <div class="search">
+                    <form action="post">
                         <label for="city" class="marker"><i class="fa fa-map-marker" aria-hidden="true"></i></label>
-                        <input type="search" id="city" name="q" />
+                        <input type="search" id="city" name="q" >
                         <button type="submit">Rechercher</button>
                     </form>
-                </section>
-                <section class="filter">
-                    <form action="">
-                        <h3>Filtres</h3>
+                </div>
+                <div class="filter">
+                    <form action="post">
+                        <p>Filtres</p>
                         <button class="filter-button">
                             <img src="./images/vectors/money.png" alt="">
                             Economique
@@ -62,15 +62,15 @@
                             Nos pépites
                         </button>
                     </form>
-                </section>
-                <section class="info">
+                </div>
+                <div class="info">
                     <img src="./images/vectors/info.png" alt="">
                     <p>
                         Plus de 500 logements sont disponibles dans cette ville
                     </p>
-                </section>
-            </section>
-            <section class="accommodations-and-populars">
+                </div>
+            </div>
+            <div class="accommodations-and-populars">
                 <section class="accommodations">
                     <h2 class="section-title">Hébergements à Marseille</h2>
                     <ul>
@@ -207,7 +207,7 @@
                 </section>
                 <section class="populars">
                     <div class="populars-title">
-                        <h2 class="section-title">Les plus populars</h2>
+                        <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="populars-cards">
@@ -270,31 +270,31 @@
                         </a>
                     </div>
                 </section>
-            </section>
+            </div>
             <section>
                 <h2>Activités à Marseille</h2>
                 <a href="">
                     <article class="card">
                         <img src="./images/activites/reno-laithienne.jpg" alt="Image du vieux port de Marseille">
-                        <h4>Vieux Port</h4>
+                        <h3>Vieux Port</h3>
                     </article>
                 </a>
                 <a href="">
                     <article class="card">
                         <img src="./images/activites/paul-hermann.jpg" alt="Image du port de Pomègues">
-                        <h4>Fort de Pomègues</h4>
+                        <h3>Fort de Pomègues</h3>
                     </article>
                 </a>
                 <a href="">
                     <article class="card">
                         <img src="./images/activites//kilyan-sockalingum.jpg" alt="Image du parc national des Calanques">
-                        <h4>Parc National des Calanques</h4>
+                        <h3>Parc National des Calanques</h3>
                     </article>
                 </a>
                 <a href="">
                     <article class="card">
                         <img src="./images/activites/florian-wehde.jpg" alt="Image de Notre Dame de la Garde à Marseille">
-                        <h4>Notre-Dame-de-la-Garde</h4>
+                        <h3>Notre-Dame-de-la-Garde</h3>
                     </article>
                 </a>
             </section>
