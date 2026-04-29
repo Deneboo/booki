@@ -1,6 +1,9 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -17,7 +20,6 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0; 
 }
 
 .main-container {
@@ -26,8 +28,11 @@ body {
     flex-direction: column;
     gap: 35px;
     max-width: 1440px;
-    padding: 0 50px;
     box-sizing: border-box;
+}
+
+main {
+    padding: 0 50px;
 }
 
 h1, h2 {
@@ -50,12 +55,12 @@ header {
     width: 100%;
     height: 79px;
     gap: 10px;
-    /* margin: auto; */
+    padding: 20px 0;
 }
 
 .logo {
     height: 19px;
-    padding: 30px 50px;
+    padding: 0 50px;
 }
 
 nav ul {
@@ -89,7 +94,6 @@ main {
 }
 
 .section-title {
-    margin: 0;
     width: 1340px;
     height: 53px;
 }
@@ -102,6 +106,9 @@ main {
 }
 
 .card img {
+    /* remove the default inline display and set the image to cover the card */
+    display: block;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -124,10 +131,14 @@ main {
     flex-direction: column;
     gap: 35px;
 }
+.main-title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 .main-title p {
     height: 18px;
-    margin: 0;
 }
 
 /****** search ***********/
@@ -258,7 +269,6 @@ filter-button:active {
 
 .accommodations ul {
     list-style: none;
-    margin: 0;
     padding-left: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -293,17 +303,14 @@ filter-button:active {
     margin-top: 10px;
     margin-bottom: 4px;
 }
-.accommodations .card-subtitle {
-    margin: 0;
-}
 
 .accommodations .card-rating {
     margin-bottom: 5px;
 }
 
 .see-more {
-  font-size: 18px;
-  font-weight: 700;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 /****** Populars ***********/
@@ -344,10 +351,6 @@ filter-button:active {
     margin-bottom: 4px;
 }
 
-.populars-cards .card-subtitle {
-    margin: 0;
-}
-
 .populars-cards .card-rating {
     margin-bottom: 5px;
 }
@@ -376,7 +379,6 @@ filter-button:active {
 .activities ul .card {
     width: 297.5px;
     max-height: 439px;
-    padding: 0;
     border-radius: 20px;
 }
 .activities ul li .card img {
@@ -388,7 +390,7 @@ filter-button:active {
 
 .activities ul li h3 {
     display: flex;
-    padding: 0 19px 20px 19px;
+    padding: 20px 19px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -402,6 +404,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
     padding: 0 20px;
+    margin: 0 50px;
     background-color: var(--main-bg-color);
 }
 
@@ -409,11 +412,11 @@ footer div {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 
 footer div p {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 700;
 }
 
