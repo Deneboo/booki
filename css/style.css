@@ -272,7 +272,7 @@ nav a:active {
     padding-left: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 15px;
+    column-gap: 30px;
     row-gap: 30px;
     align-items: stretch;
 }
