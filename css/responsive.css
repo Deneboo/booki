@@ -1,0 +1,82 @@
+/****** Media queries ***********/
+@media (max-width: 1440px) and (min-width: 1024px) {
+
+    .main-container {
+        max-width: 1440px;
+    }
+
+
+    .accommodations ul {
+        column-gap: 10px;
+    }
+
+    .section-title, 
+    .activities {
+        width: 100%; 
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .activities ul {
+        column-gap: 20px;
+    }
+
+    .activities ul .card {
+        width: 100%;
+    }
+
+    footer {
+        max-width: 1340px;
+    }
+}
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+
+    .main-container {
+        max-width: 1024px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .accommodations-and-populars {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .accommodations {
+        width: 100%;
+    }
+
+    .populars {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populars-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populars-cards a {
+        width: 30%;
+    }
+
+    .populars-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populars-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
+}
