@@ -23,15 +23,16 @@ body {
 }
 
 .main-container {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     gap: 35px;
-    max-width: 1440px;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
 main {
+    width: 100%;
     padding: 0 50px;
 }
 
@@ -56,6 +57,7 @@ header {
     height: 79px;
     gap: 10px;
     padding: 20px 0;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -94,7 +96,6 @@ main {
 }
 
 .section-title {
-    width: 1340px;
     height: 53px;
 }
 
@@ -131,6 +132,7 @@ main {
     flex-direction: column;
     gap: 35px;
 }
+
 .main-title {
     display: flex;
     flex-direction: column;
@@ -205,7 +207,6 @@ main {
     font-weight: 700;
 }
 .filter form button {
-    /* width: 170px; */
     display: flex;
     align-items: center;
     gap: 8px;   
@@ -248,7 +249,10 @@ filter-button:active {
 
 .accommodations-and-populars {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    min-width: 0;
 }
 
 .accommodations-and-populars section {
@@ -361,13 +365,13 @@ filter-button:active {
     display: flex;
     flex-direction: column ;
     gap: 30px;
-    width: 1340px;
+    width: 100%;
     height: 559.0187377929688px;
     padding: 30px;
 }
 
 .activities ul {
-    max-width: 1280px;
+    max-width: 100%;
     list-style: none;
     margin: 0 0 0 0;
     padding-left: 0;
@@ -377,7 +381,7 @@ filter-button:active {
 }
 
 .activities ul .card {
-    width: 297.5px;
+    width: 100%;
     max-height: 439px;
     border-radius: 20px;
 }
@@ -388,8 +392,9 @@ filter-button:active {
     border-top-right-radius: 20px;
 }
 
-.activities ul li h3 {
+.activities ul li p {
     display: flex;
+    font-weight: 700;
     padding: 20px 19px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -398,7 +403,6 @@ filter-button:active {
 /****** footer ***********/
 
 footer {
-    width: 1340px;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -424,10 +428,53 @@ footer div p {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+@media (max-width: 1440px) and (min-width: 1024px) {
+
+    .main-container {
+        max-width: 1440px;
+    }
+
+
+    .accommodations ul {
+        column-gap: 10px;
+    }
+
+    .section-title, 
+    .activities {
+        width: 100%; 
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .activities ul {
+        column-gap: 20px;
+    }
+
+    .activities ul .card {
+        width: 100%;
+    }
+
+    footer {
+        max-width: 1340px;
+    }
+}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .accommodations-and-popular {
+
+    .main-container {
+        max-width: 1024px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .accommodations-and-populars {
+        display: flex;
         flex-direction: column;
+        gap: 40px;
+        width: 100%;
     }
 
     .accommodations {
