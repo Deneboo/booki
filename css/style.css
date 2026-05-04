@@ -232,12 +232,7 @@ main {
 .filter-button:hover,
 .filter-button:active {
     background-color: var(--filter-bg-color);
-}
-
-.filter-button img {
-    width: 22px;
-    height: 22px;
-}   
+}  
 
 /****** info ***********/
 
@@ -246,11 +241,6 @@ main {
     align-items: center;
     gap: 10px;
 }
-
-/* .info img {
-    width: 24px;
-    height: 24px;
-} */
 
 .info p {
     font-size: 16px;
@@ -289,13 +279,15 @@ main {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 15px;
     row-gap: 30px;
+    align-items: stretch;
 }
 
 .accommodations .card {
-    height: 207.25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     gap: 4px;
     opacity: 1;
-    padding-bottom: 15px;
     border-radius: 20px;
 }
 
