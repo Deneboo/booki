@@ -23,7 +23,7 @@ body {
 }
 
 .main-container {
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -95,10 +95,6 @@ main {
     padding: 0 50px;
 }
 
-.section-title {
-    height: 53px;
-}
-
 .card {
     background-color: white;
     border-radius: 20px;
@@ -146,7 +142,7 @@ main {
 /****** search ***********/
 
 .search {
-    width: 377px;
+    width: 337px;
     height: 49px;
     opacity: 1;
     border-radius: 15px;
@@ -158,7 +154,6 @@ main {
 }
 
 .marker {
-    display: flex;
     width: 50px;
     height: 49px;
     background-color: var(--main-bg-color);
@@ -171,15 +166,26 @@ main {
     width: 14px;
     height: 18px;
     padding: 15px 18px;
+    color: #000
 }
 
 .search input {
+    flex: 1;
     height: 49px;
     border-top: 1px solid var(--main-bg-color);
     border-bottom: 1px solid var(--main-bg-color);
     border-left: none;
     border-right: none;
-    padding: 0 10px;
+    padding: 0 15px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+}
+
+/* TODO : For demo ony, remove when datas are available */
+.search input::placeholder {
+    color: #000;
+    opacity: 1;
 }
 
 .search button {
@@ -201,11 +207,15 @@ main {
     display: flex;
     flex-direction: row;
     gap: 15px;
+    align-items: center; 
 }
+
 .filter form p {
     font-size: 18px;
     font-weight: 700;
+    line-height: 100%;
 }
+
 .filter form button {
     display: flex;
     align-items: center;
@@ -219,8 +229,9 @@ main {
     padding: 4px 19px;
 }
 
-filter-button:active {
-    background-color: var(--filter-bd-color);
+.filter-button:hover,
+.filter-button:active {
+    background-color: var(--filter-bg-color);
 }
 
 .filter-button img {
@@ -236,10 +247,10 @@ filter-button:active {
     gap: 10px;
 }
 
-.info img {
+/* .info img {
     width: 24px;
     height: 24px;
-}
+} */
 
 .info p {
     font-size: 16px;
@@ -326,6 +337,11 @@ filter-button:active {
 .populars-title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.populars-title i {
+    display: flex;
     align-items: center;
 }
 
@@ -422,90 +438,4 @@ footer div {
 footer div p {
     font-size: 18px;
     font-weight: 700;
-}
-
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-/****** Media queries ***********/
-@media (max-width: 1440px) and (min-width: 1024px) {
-
-    .main-container {
-        max-width: 1440px;
-    }
-
-
-    .accommodations ul {
-        column-gap: 10px;
-    }
-
-    .section-title, 
-    .activities {
-        width: 100%; 
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .activities ul {
-        column-gap: 20px;
-    }
-
-    .activities ul .card {
-        width: 100%;
-    }
-
-    footer {
-        max-width: 1340px;
-    }
-}
-
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-
-    .main-container {
-        max-width: 1024px;
-    }
-
-    main {
-        width: 100%;
-    }
-
-    .accommodations-and-populars {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        width: 100%;
-    }
-
-    .accommodations {
-        width: 100%;
-    }
-
-    .populars {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populars-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populars-cards a {
-        width: 30%;
-    }
-
-    .populars-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populars-cards .card-subtitle {
-        font-size: 13px;
-    }
-}
-
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
 }
