@@ -23,6 +23,7 @@ body {
 }
 
 .main-container {
+    max-width: 1440px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -33,6 +34,9 @@ body {
 
 main {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
     padding: 0 50px;
 }
 
@@ -69,10 +73,8 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 68px;
-    width: 344;
-    height: 35;
-    left: 1096px;
-    opacity: 1;
+    width: 344px;
+    height: 35px;
     gap: 68px;
     padding: 0 50px;
 }
@@ -85,14 +87,6 @@ nav a:hover {
 nav a:hover,
 nav a:active {
     color: var(--main-color);
-}
-
-main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    padding: 0 50px;
 }
 
 .card {
@@ -229,8 +223,8 @@ main {
     padding: 4px 19px;
 }
 
-.filter-button:hover,
-.filter-button:active {
+.filter form button:hover,
+.filter form button:active {
     background-color: var(--filter-bg-color);
 }  
 
@@ -374,7 +368,7 @@ main {
     flex-direction: column ;
     gap: 30px;
     width: 100%;
-    height: 559.0187377929688px;
+    height: auto;
     padding: 30px;
 }
 
@@ -398,6 +392,7 @@ main {
 }
 .activities ul li .card img {
     width: 100%;
+    object-fit: cover;
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;

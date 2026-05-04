@@ -37,35 +37,35 @@
                         <p>En plein centre-ville ou en pleine nature</p>
                     </section>
                     <div class="search">
-                        <form action="post">
-                            <label for="city" class="marker"><i class="fa-solid fa-location-dot"></i></label>
+                        <form method="get" action="#">
+                            <label for="city" class="marker"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></label>
                             <input type="search" id="city" name="q" placeholder="Marseille, France">
                             <button type="submit">Rechercher</button>
                         </form>
                     </div>
                     <div class="filter">
-                        <form action="post">
+                        <form method="get" action="#">
                             <p>Filtres</p>
-                            <button class="filter-button">
-                                <i class="fa-solid fa-money-bill-wave"></i>
+                            <button type="button">
+                                <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
                                 Economique
                             </button>
-                            <button class="filter-button">
-                                <i class="fa-solid fa-person"></i>
+                            <button type="button">
+                                <i class="fa-solid fa-person" aria-hidden="true"></i>
                                 Familial
                             </button>
-                            <button class="filter-button">
-                                <i class="fa-solid fa-heart"></i>
+                            <button type="button">
+                                <i class="fa-solid fa-heart" aria-hidden="true"></i>
                                 Romantique
                             </button>
-                            <button class="filter-button">
-                                <i class="fa-solid fa-fire"></i>
+                            <button type="button">
+                                <i class="fa-solid fa-fire" aria-hidden="true"></i>
                                 Nos pépites
                             </button>
                         </form>
                     </div>
                     <div class="info">
-                        <i class="fa-solid fa-info"></i>
+                        <i class="fa-solid fa-info" aria-hidden="true"></i>
                         <p>
                             Plus de 500 logements sont disponibles dans cette ville
                         </p>
@@ -73,14 +73,12 @@
                 </div>
                 <div class="accommodations-and-populars">
                     <section class="accommodations">
-                        <a href="#">
-                            <h2>Hébergements à Marseille</h2>
-                        </a>
+                        <h2><a href="#">Hébergements à Marseille</a></h2>
                         <ul>
                             <li>
                                 <a href="#">
                                     <article class="card">
-                                        <img src="./images/accommodations/fred-kleber.jpg" alt="Image d'une chambre d'hôtel style minimaliste scandinave montrant deux lit simples">
+                                        <img src="./images/accommodations/fred-kleber.jpg" alt="Image d'une chambre d'hôtel style minimaliste scandinave avec deux lit simples">
                                         <div class="card-content">
                                             <div class="card-txt">
                                                 <h3 class="card-title">Hôtel du port</h3>
@@ -101,7 +99,7 @@
                             <li>
                                 <a href="#">
                                     <article class="card">
-                                        <img src="./images/accommodations/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant le lit, la télévision et le bureau">
+                                        <img src="./images/accommodations/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel simple montrant le lit">
                                         <div class="card-content">
                                             <div class="card-txt">
                                                 <h3 class="card-title">Hôtel chez Amina</h3>
@@ -122,7 +120,7 @@
                             <li>
                                 <a href="#">
                                     <article class="card">
-                                        <img src="./images/accommodations/reisetopia.jpg" alt="Image de la chambre d'hôtel contemporaine élégante montrant un lit et un espace de rangement">
+                                        <img src="./images/accommodations/reisetopia.jpg" alt="Image de la chambre d'hôtel contemporaine élégante montrant un lit">
                                         <div class="card-content">
                                             <div class="card-txt">
                                                 <h3 class="card-title">Hôtel les mouettes</h3>
@@ -143,7 +141,7 @@
                             <li>
                                 <a href="#">
                                     <article class="card">
-                                        <img src="./images/accommodations/annie-spratt.jpg" alt="Image de la chambre d'hôtel style marin avec un lit double élégante montrant un lit et un espace de rangement">
+                                        <img src="./images/accommodations/annie-spratt.jpg" alt="Image de la chambre d'hôtel style marin avec un lit double">
                                         <div class="card-content">
                                             <div class="card-txt">
                                                 <h3 class="card-title">Hôtel de la mer</h3>
@@ -216,7 +214,7 @@
                         <div class="populars-cards">
                             <a href="#">
                                 <article class="card">
-                                    <img src="./images/accommodations/emile-guillemot.jpg" alt="Image de la chambre d'hôtel verte style maximaliste Art déco montrant un lit double">
+                                    <img src="./images/accommodations/emile-guillemot.jpg" alt="Image de la chambre d'hôtel verte style Art déco">
                                     <div class="card-content">
                                         <div class="card-txt">
                                             <h3 class="card-title">Hôtel Le soleil du matin</h3>
@@ -275,12 +273,10 @@
                     </section>
                 </div>
                 <section class="activities">
-                    <a href="#">
-                        <h2>Activités à Marseille</h2>
-                    </a>
+                    <h2><a href="#">Activités à Marseille</a></h2>
                     <ul>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <div class="card">
                                     <img src="./images/activites/reno-laithienne.jpg" alt="Image du vieux port de Marseille">
                                     <p>Vieux Port</p>
@@ -288,7 +284,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <div class="card">
                                     <img src="./images/activites/paul-hermann.jpg" alt="Image du port de Pomègues">
                                     <p>Fort de Pomègues</p>
@@ -296,15 +292,15 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <div class="card">
-                                    <img src="./images/activites//kilyan-sockalingum.jpg" alt="Image du parc national des Calanques">
+                                    <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image du parc national des Calanques">
                                     <p>Parc National des Calanques</p>
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <div class="card">
                                     <img src="./images/activites/florian-wehde.jpg" alt="Image de Notre Dame de la Garde à Marseille">
                                     <p>Notre-Dame-de-la-Garde</p>
