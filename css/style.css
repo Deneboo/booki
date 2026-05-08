@@ -54,6 +54,8 @@ a {
     text-decoration: none;
 }
 
+/****** header ***********/
+
 header {
     display: flex;
     justify-content: space-between;
@@ -95,7 +97,7 @@ nav a:active {
     padding: 5px;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
 }
-
+/****** card ***********/
 
 .card img {
     /* remove the default inline display and set the image to cover the card */
@@ -387,7 +389,7 @@ nav a:active {
 .activities ul {
     max-width: 100%;
     list-style: none;
-    margin: 0 0 0 0;
+    margin: 0;
     padding-left: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -423,8 +425,8 @@ nav a:active {
 
 footer {
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
     column-gap: 10px;
     margin: 0 50px;
     background-color: var(--main-bg-color);
