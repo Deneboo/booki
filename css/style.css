@@ -425,9 +425,8 @@ nav a:active {
 
 footer {
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    column-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin: 0 50px;
     background-color: var(--main-bg-color);
 }
